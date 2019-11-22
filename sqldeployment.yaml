@@ -45,7 +45,7 @@ spec:
   type: NodePort
   ports:
     - port: 1433
-      nodePort: 31433
+      #nodePort: 31433
       name: tcp
   selector:
     app: mssql
