@@ -1,7 +1,9 @@
 1. Creating user
+
 oc new-project mssql
 
 2. Create secret
+
 oc apply -f secret.yaml
 
 or
@@ -9,9 +11,11 @@ or
 oc create secret generic mssql --from-literal=SA_PASSWORD="Sql2019isfast"
 
 3. Create storage
+
 oc apply -f storage.yaml
 
 4. Create deplyoment
+
 oc apply -f sqldeployment.yaml
 
 
